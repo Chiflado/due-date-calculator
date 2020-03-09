@@ -1,6 +1,11 @@
 const { dueDateCalculator } = require('./index');
-
+ 
 test('calculate one hour', () => {
     const test = dueDateCalculator('Mar 09 2020 15:43:00 GMT+0100', 3600000);
     expect(test).toBe(Date(1583768580000));
 });
+
+test('calculate two day long due date', () => {
+    const dueDate = dueDateCalculator('Mar 09 2020 15:43:00 GMT+0100', 7200000);
+    expect(dueDate).toBe(Date(1583829780000));
+})
