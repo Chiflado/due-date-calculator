@@ -1,0 +1,19 @@
+{
+  "name": "due-date",
+  "version": "1.0.0",
+  "description": "Due Date Calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chiflado/due-date-calculator.git"
+  },
+  "author": "Balázs Prjevara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chiflado/due-date-calculator/issues"
+  },
+  "homepage": "https://github.com/Chiflado/due-date-calculator#readme"
+}
