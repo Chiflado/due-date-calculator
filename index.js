@@ -1,5 +1,5 @@
 'use strict';
 
-exports.dueDateCalculator = () => {
+exports.dueDateCalculator = (start, turnaround) => {
     return 'It works'
 }
