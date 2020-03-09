@@ -32,6 +32,9 @@ test('calculate due date with weekend', () => {
     expect(dueDate).toEqual(new Date(1584434580000));
     const dueDate2 = dueDateCalculator('Mar 13 2020 15:43:00 GMT+0100', oneHour * 2);
     expect(dueDate2).toEqual(new Date(1584348180000));
+    const expectedDate3 = Date.parse('Mar 18 2020 15:43:00 GMT+0100')
+    const dueDate3 = dueDateCalculator('Mar 11 2020 15:43:00 GMT+0100', oneHour * 40);
+    expect(dueDate3).toEqual(new Date(expectedDate3));
 })
 
 test('sets next day start if next day is weekend', () => {
