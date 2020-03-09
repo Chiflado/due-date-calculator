@@ -1,5 +1,7 @@
 'use strict';
 
 exports.dueDateCalculator = (start, turnaround) => {
-    return 'It works'
+    const startTime = Date.parse(start);
+    const finishDate = Date(startTime + turnaround);
+    return finishDate;
 }
