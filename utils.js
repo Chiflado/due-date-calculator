@@ -21,5 +21,5 @@ exports.watchWeekends = (nextDayStart) => {
     if (nextDayStartDate.getDay() === 0) {
         return nextDayStartDate.setDate(nextDayStartDate.getDate() + 1);
     }
-    return Date.parse(nextDayStartDate)
+    return nextDayStart;
 }

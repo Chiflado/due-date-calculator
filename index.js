@@ -15,7 +15,7 @@ function watchWorkingHours(startTime, turnaround) {
     if (startTime + turnaround > dayEnd) {
         let remainTurnaround = turnaround - (dayEnd - startTime);
         const dueDate = new Date(nextDayStart + remainTurnaround);
-        dayEnd = setDayEnd(dueDate);
+        dayEnd = setDayEnd(nextDayStart);
         if (dueDate > dayEnd) {
             return watchWorkingHours(nextDayStart, remainTurnaround);
         }
